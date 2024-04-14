@@ -33,7 +33,7 @@ int main(void) {
 
         string uin = input;
 
-        if (uin.substr(0, 4) == "over") {
+        if (uin.substr(0, 6) == "over()") {
 
             cout << "------------Over----------" << endl;
             
