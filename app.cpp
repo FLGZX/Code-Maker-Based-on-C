@@ -16,36 +16,19 @@
 
 using namespace std;
 
-
 string in;
-
-
 
 int main(void) {
     cout << "     Welcome to CMBOC" << endl;
     cout << "---------Get ready---------" << endl;
 
     while (true) {
-
         string input;
         getline(cin, input);
 
+        if (input.substr(0, 4) == "set(") {
 
-        string uin = input;
-
-        if (uin.substr(0, 6) == "over()") {
-
-            cout << "------------Over----------" << endl;
-            
-            break;
-
-        }
-
-
-
-        if (uin.substr(0, 4) == "out(") {
-
-            size_t end_pos = uin.find(')', 4);
+            size_t end_pos = input.find(')', 4);
 
             if (end_pos != string::npos) {
 
@@ -53,16 +36,15 @@ int main(void) {
 
                 if (length > 0) {
 
-                    cout << uin.substr(4, length) << endl;
+                    in = input.substr(4, length); 
+                    cout << "Value set to: " << in << endl;
 
                 }
-
                 else {
 
-                    cout << "Error:: No content between 'out(' and ')'" << endl;
+                    cout << "Error:: No content between 'set(' and ')'" << endl;
 
                 }
-
             }
             else {
 
@@ -70,13 +52,22 @@ int main(void) {
 
             }
         }
+        else if (input.substr(0, 4) == "out(") a
+           
+            cout << in << endl;
+
+        }
+        else if (input.substr(0, 6) == "over()") {
+
+            cout << "------------Over----------" << endl;
+            break;
+
+        }
         else {
 
             cout << "Error:: Input format error" << endl;
 
         }
-
-
     }
 
     return 0;
