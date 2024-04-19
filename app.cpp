@@ -8,7 +8,6 @@
 #include<string.h>
 #include<cstdio>
 #include<iostream>
-#include<windows.h>
 #include<cmath>
 #include<cstring>
 #include<string>
