@@ -36,8 +36,8 @@ int main(void) {
 
                 if (length > 0) {
 
-                    in = input.substr(4, length); 
-                    cout << "Value set to: " << in << endl;
+                    in = input.substr(4, length);
+
 
                 }
                 else {
@@ -52,8 +52,8 @@ int main(void) {
 
             }
         }
-        else if (input.substr(0, 4) == "out(") a
-           
+        else if (input.substr(0, 4) == "out("){
+
             cout << in << endl;
 
         }
@@ -70,5 +70,7 @@ int main(void) {
         }
     }
 
-    return 0;
+        return 0;
 }
+
+
