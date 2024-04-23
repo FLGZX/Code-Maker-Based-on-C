@@ -1,3 +1,11 @@
+
+
+Latest update:
+
+Now out() needs to be run in conjunction with the set() function. Input set() first before outputting
+
+Last update：
+
 Welcome message: The program first outputs the welcome message "Welcome to CMBOC" and "--- Get ready ---".
 Infinite loop: The program enters a while (true) infinite loop, which means that the program will continue to run unless a specific exit condition is encountered.
 Input reception: Within the loop, the program uses getline (cin, input); Read a line of string from standard input and store it in the input variable.
